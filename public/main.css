@@ -1,0 +1,24 @@
+/* کلاس های عمومی */
+@font-face {
+    font-family: IRANSans;
+    src: url("fonts/IRANSans.ttf");
+}
+
+* {
+    font-family: IRANSans;
+}
+
+.main-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}

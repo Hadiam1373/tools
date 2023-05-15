@@ -1,0 +1,56 @@
+/*بخش دربرگیرنده کل محتوای کامپوننت */
+.accordion-cart {
+    max-width: 80%;
+    height: auto;
+}
+
+/* هر بحش که حاوی عنوان و محتوای آکاردیون است */
+.accordion {
+    width: 100%;
+    height: auto;
+    box-shadow: 1px 2px 8px 0px rgba(0, 0, 0, 0.14);
+    -webkit-box-shadow: 1px 2px 8px 0px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 1px 2px 8px 0px rgba(0, 0, 0, 0.14);
+}
+
+.top-flash {
+    width: 15px;
+}
+
+.bottom-flash {
+    width: 15px;
+}
+
+/* قسمت هدر هر آکاردیون */
+.header-accordion {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    /*padding: 10px 15px;*/
+    border-bottom: 1px solid lightgray;
+    height: 60px;
+    cursor: pointer;
+}
+
+.header-accordion:hover {
+    background-color: #c7c7c7;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* قسمت محتوای هر آکاردیون */
+.content-accordion {
+    padding: 20px;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .accordion-cart {
+        width: 100%;
+    }
+}
