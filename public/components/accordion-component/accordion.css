@@ -1,6 +1,6 @@
 /*بخش دربرگیرنده کل محتوای کامپوننت */
 .accordion-cart {
-    max-width: 80%;
+    width: 950px;
     height: auto;
 }
 
@@ -8,16 +8,9 @@
 .accordion {
     width: 100%;
     height: auto;
-    box-shadow: 1px 2px 8px 0px rgba(0, 0, 0, 0.14);
-    -webkit-box-shadow: 1px 2px 8px 0px rgba(0, 0, 0, 0.14);
-    -moz-box-shadow: 1px 2px 8px 0px rgba(0, 0, 0, 0.14);
 }
 
-.top-flash {
-    width: 15px;
-}
-
-.bottom-flash {
+.icon {
     width: 15px;
 }
 
@@ -28,29 +21,63 @@
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
-    /*padding: 10px 15px;*/
-    border-bottom: 1px solid lightgray;
     height: 60px;
     cursor: pointer;
+    position: relative;
 }
 
 .header-accordion:hover {
     background-color: #c7c7c7;
 }
 
+.open-accordion {
+    background-color: #808080;
+    transition: background-color 1s ease-in-out;
+}
+
 .title {
     font-weight: bold;
     font-size: 18px;
+    position: absolute;
+    right: 20px;
+}
+
+.icon {
+    position: absolute;
+    left: 20px;
 }
 
 /* قسمت محتوای هر آکاردیون */
 .content-accordion {
     padding: 20px;
     text-align: right;
+    height: 100px;
+    border-top: 1px solid lightgray;
+    transition: all .5s ease-in-out;
+    overflow: auto;
+}
+
+.hidden-accordion {
+    height: 0;
+    padding: 0;
+    opacity: 0;
+}
+
+/* نمایش کامپوننت در سایز های مختلف */
+@media (max-width: 992px) {
+    .accordion-cart {
+        width: 700px;
+    }
 }
 
 @media (max-width: 768px) {
     .accordion-cart {
-        width: 100%;
+        width: 500px;
+    }
+}
+
+@media (max-width: 520px) {
+    .accordion-cart {
+        width: 350px;
     }
 }
